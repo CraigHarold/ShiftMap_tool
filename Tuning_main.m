@@ -2,7 +2,7 @@ clear all;clc; close all;
 
 %% Drive Cycle
 
-cycles = {'Combined_sevenstd'};
+cycles = {'Combined_twelvestd'};
 
 
 %Choose a drive cycle from the options below:
@@ -32,7 +32,7 @@ cycles = {'Combined_sevenstd'};
 % 4- Constant Torque reserve 
     
     Drivability_mode = 3;
-    Switching_losses = 0;      % Shifting losses [percentage of fuel consumed]
+    Switching_losses = 10;      % Shifting losses [percentage of fuel consumed]
     
     %For mode 3, set balance ratio relative to 1, with 1 being maximum fuel economy
     
@@ -78,7 +78,7 @@ cycles = {'Combined_sevenstd'};
      DPM_main
      Shiftmap_upshift
      Kmeans_clustering
-     close(4:20)
+     %close(4:20)
      
  %Polyfit               % Default, is linear fit
     Polyfit = 0;        % 0 for polyfit, 1 for linear plotting !!No data recorded for FFM.
@@ -98,7 +98,7 @@ cycles = {'Combined_sevenstd'};
      
 
 %Clear variables     
- clear t_max Te_max Te_vector R X x1 x2 i y z timesteps vel_i th_i i R QW QWZ qq...
-       shift_up p12_1 minx12 miny12 min_vel max_vel ii I gn engspeed_pt eng_speed...
-       sumdist th th_i th_m th_f vel_i vel_m vel_f veh_vel_pt vel_dwnpts vel_pts...
-       velocity_pts X_i Y_i X_m Y_m X_f Y_f;
+%   clear t_max Te_max Te_vector R X x1 x2 i y z timesteps vel_i th_i i R QW QWZ qq...
+%        shift_up p12_1 minx12 miny12 min_vel max_vel ii I gn engspeed_pt eng_speed...
+%        sumdist th th_i th_m th_f vel_i vel_m vel_f veh_vel_pt vel_dwnpts vel_pts...
+%        velocity_pts X_i Y_i X_m Y_m X_f Y_f;

@@ -24,7 +24,7 @@ hold on
 throttle_points = [0,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,...
                     0.45,0.5,0.6,0.7,0.8,0.9,0.95];            %Suited for FFM model
 
-for i=1:numel(C)
+for i=2
     
 if (C{1,i})>0                                                   %To avoide empty cells
     
